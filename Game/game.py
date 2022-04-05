@@ -68,6 +68,7 @@ def run():
         game_active = False
         count_enemies = 0
         num_of_increase_speed = 1
+        counter = 0
 
 
     class Player(Block):
@@ -126,14 +127,17 @@ def run():
         def launch_enemy(self):
             if Block.game_active and Block.count_enemies < num_of_enemies:
                 Block.count_enemies += 1
-                self.speed_x = random.randint(-17, 17)
-                self.speed_y = random.randint(-17, 17)
+                self.speed_x = random.randint(-15, 15)
+                self.speed_y = random.randint(-15, 15)
                 Block.start_time = pygame.time.get_ticks()
 
         def increase_speed_with_time(self):
             if Block.start_time and (pygame.time.get_ticks() - Block.start_time >= 3000 * Block.num_of_increase_speed):
-                self.change_speed(1.2)
-                Block.num_of_increase_speed += 1
+                self.change_speed(1.1)
+                Block.counter+=1
+                if (Block.counter == num_of_enemies):
+                    Block.num_of_increase_speed += 1
+                    Block.counter = 0
 
         def change_speed(self, value):
             self.speed_x *= value

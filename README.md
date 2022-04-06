@@ -11,7 +11,7 @@ It sounds easy, but try to hold out for at least 15 seconds.
 
 How to play?
 IN TERMINAL:
-pip install pygame
+pip3 install pygame
 python3 game.py
 
 Good Luck!

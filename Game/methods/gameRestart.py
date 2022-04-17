@@ -1,6 +1,6 @@
 from Sprites.BaseBlock import Block
 import Sprites.player as plr, Sprites.enemy as enemy, random, pygame
-from configuration import screen_width, screen_height,get_path
+from configuration import screen_width, screen_height, get_path
 
 num_of_enemies = 4
 gr_pl = pygame.sprite.Group()
@@ -12,7 +12,7 @@ enemies = list()
 # current_result = 0
 
 def restart():
-    global enemies, gr_en, player,gr_pl
+    global enemies, gr_en, player, gr_pl
     pygame.mixer.music.unload()
     enemies = list()
     gr_en = pygame.sprite.Group()

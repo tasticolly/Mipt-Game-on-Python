@@ -1,6 +1,6 @@
 import pygame
 from Sprites.BaseBlock import Block
-from configuration import screen_height, screen_width, screen, game_font, data,sound_destroy,name_image
+from configuration import screen_height, screen_width, screen, game_font, data, sound_destroy, name_image
 from methods import gameRestart, authorization
 
 player_color = (229, 28, 0)
@@ -41,4 +41,4 @@ class Player(Block):
         if name_image is None:
             pygame.draw.rect(screen, player_color, self.rect)
         else:
-            screen.blit(self.image,self.rect)
+            screen.blit(self.image, self.rect)

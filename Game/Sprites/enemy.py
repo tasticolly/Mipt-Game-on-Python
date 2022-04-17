@@ -1,7 +1,7 @@
 import pygame, random
 from methods import gameRestart
 from Sprites.BaseBlock import Block
-from configuration import screen_height, screen_width, screen,sound_destroy
+from configuration import screen_height, screen_width, screen, sound_destroy
 
 enemies_color = (22, 8, 159)
 

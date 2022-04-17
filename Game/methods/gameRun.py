@@ -1,7 +1,7 @@
 import pygame
 import random
 from methods import gameRestart
-from configuration import screen, bg_color, FPS, clock, stop_program,sound_select
+from configuration import screen, bg_color, FPS, clock, stop_program, sound_select
 from Sprites.BaseBlock import Block
 
 

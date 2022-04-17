@@ -1,5 +1,5 @@
 import pygame
-from configuration import game_font,sound_select
+from configuration import game_font, sound_select
 
 
 class Menu:
@@ -42,6 +42,5 @@ class Menu:
 
             if i == self.current_option_index:
                 pygame.draw.rect(surf, (27, 103, 213), option_rect)
-
 
             surf.blit(option, option_rect)

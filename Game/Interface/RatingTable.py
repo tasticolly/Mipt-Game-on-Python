@@ -1,5 +1,5 @@
 import pygame
-from configuration import game_font, screen, stop_program, screen_height, screen_width, data,sound_select
+from configuration import game_font, screen, stop_program, screen_height, screen_width, data, sound_select
 from methods import authorization
 
 header_nick = "Nickname:"
@@ -11,6 +11,7 @@ text_position = "Position in rating: "
 top_f = pygame.font.Font("freesansbold.ttf", 48)
 login_f = pygame.font.Font("freesansbold.ttf", 42)
 name_f = pygame.font.Font(pygame.font.match_font("dejavusansmono"), 32)
+
 
 class RatingTable:
     def __init__(self, dict_shellve, x, y, option_y_padding):
@@ -37,7 +38,7 @@ class RatingTable:
             result_font = game_font.render(str(self.table[login]), True, "black")
             rect_pos = position_font.get_rect()
             rect_pos.topright = (self.x - 110, self.y + (i + 1) * self.option_y_padding)
-            surf.blit(login_font, (self.x- 100, self.y + (i + 1) * self.option_y_padding - 5))
+            surf.blit(login_font, (self.x - 100, self.y + (i + 1) * self.option_y_padding - 5))
             surf.blit(result_font, (self.x + 350, self.y + (i + 1) * self.option_y_padding))
             surf.blit(position_font, rect_pos)
 

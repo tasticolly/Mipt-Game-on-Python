@@ -1,6 +1,6 @@
 import pygame
 import main
-from configuration import game_font, screen, stop_program, screen_height, screen_width, data,sound_select
+from configuration import game_font, screen, stop_program, screen_height, screen_width, data, sound_select
 from time import sleep
 
 # Personal Data

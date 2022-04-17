@@ -10,7 +10,7 @@ text_position = "Position in rating: "
 
 top_f = pygame.font.Font("freesansbold.ttf", 48)
 login_f = pygame.font.Font("freesansbold.ttf", 42)
-name_f = pygame.font.Font(pygame.font.match_font("dejavusansmono"), 32)
+name_f = pygame.font.Font("Fonts/DejaVuSansMono.ttf", 32)
 
 
 class RatingTable:
